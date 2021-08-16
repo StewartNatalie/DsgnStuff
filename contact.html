@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen"/>
+        <meta name= "apple-mobile-web-app-status-bar-style" content="black"/>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Dsgn Stuff</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Barlow+Semi+Condensed&family=Gothic+A1&family=IBM+Plex+Sans+Condensed:wght@200&family=IBM+Plex+Sans:wght@300&family=Mulish:wght@300&family=News+Cycle&family=Noto+Sans+JP:wght@300&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="main1.js" defer></script>
+
+
+    </head>
+
+    <body>
+        
+        <header class="fixed">
+        <div class ="nav-contact">        
+            <div class ="left-side-1">
+                <div class ="brand-1">
+                    <a href="index.html"><div> Dsgn Stuff </div></a>
+                </div>
+            </div> 
+
+            <div class ="nav-links">
+                <li><a href="services.html">Services</a></li>  
+                <li><a href="Index.html">Go Home</a></li>             
+            </div>     
+            
+            <div class ="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        </header>
+                    
+            <div class="text-contact">
+                <h5>
+                Get in Touch    
+                </h5>
+            </div>
+
+            <div class="container2">
+                <div class="portfolio-items-wrapper">
+                    <div class="portfolio-item-wrapper">
+                        <div class="introServices">
+                            <div class="slideShowImagesServices" style="background-image:url(images/couch.jpg)"></div>            
+                            <div class="slideShowImagesServices" style="background-image:url(images/couch.jpg)"></div>
+                            <div class="slideShowImagesServices" style="background-image:url(images/couch.jpg)"></div>            
+                            <div class="slideShowImagesServices" style="background-image:url(images/chairs5.jpg)"></div>
+                            <div class="slideShowImagesServices" style="background-image:url(images/chairs5.jpg)"></div>
+                            <div class="slideShowImagesServices" style="background-image:url(images/chairs5.jpg)"></div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class ="email">
+                    <div class="mail-form-submit">
+                        <form id="contact-form" method="post" action="mailto:alex@blackfordjustice.com">
+                    
+                            <input name="name" type="text" class="form-control" placeholder="Name" required><br>
+                            
+                            <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+                            
+                            <input name="phone" type="text" class="form-control" placeholder="Phone"><br>
+                                
+                            <input name="message" type="text" class="form-control" placeholder="Message"><br>
+
+                            <input type="submit" class="form-control-submit" value="Submit">
+                        </form>                  
+                    </div>
+                </div>            
+            </div>
+
+        <div class="text-footer-description">
+            <p>Dsgn Stuff by Natalie Stewart・CEO | Founder © 2020
+            Montecito・CA</p>
+        </div>
+        
+        <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
+
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener('mouseover', () => {
+                    portfolioItem.childNodes[1].classList.add('img-darken');
+                })
+                portfolioItem.addEventListener('mouseout', () => {
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                })
+            })
+        </script>
+          
+
+                  
+        <script src="app.js"></script> 
+    
+    </body>
+
+</html>
+
+
+    
+    
